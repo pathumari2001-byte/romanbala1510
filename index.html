@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameVerse - Ultimate Gaming Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="images/logo.png">
+
+</head>
+
+<body>
+
+<!-- Login Check -->
+
+<script>
+
+if(localStorage.getItem("loggedIn")!="true"){
+
+    window.location.href="login.html";
+
+}
+
+</script>
+
+<!-- Loading Screen -->
+
+<div id="loader">
+
+    <h1>🎮 GameVerse</h1>
+
+    <p>Loading...</p>
+
+</div>
+
+<!-- Navigation -->
+
+<nav>
+
+    <div class="logo">
+
+        🎮 GameVerse
+
+    </div>
+
+    <div id="menuToggle">
+
+        ☰
+
+    </div>
+
+    <ul id="navMenu">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#featured">Featured</a></li>
+
+        <li><a href="#games">Games</a></li>
+
+        <li><a href="#news">News</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Games..."
+    >
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+<a href="login.html">
+    <button class="login-btn">Login</button>
+</a>
+
+<button id="logoutBtn" class="login-btn">Logout</button>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+
+            Welcome to GameVerse
+
+        </h1>
+
+        <p>
+
+            Play Amazing Games Online
+
+        </p>
+
+        <a href="#games">
+
+            <button class="play-btn">
+
+                ▶ Play Now
+
+            </button>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Image Slider -->
+
+<section class="slider">
+
+    <img src="images/banner1.jpg" class="slide active">
+
+    <img src="images/banner2.jpg" class="slide">
+
+    <img src="images/banner3.jpg" class="slide">
+
+</section>
+<!-- =========================
+     Featured Games
+========================= -->
+
+<section class="featured" id="featured">
+
+    <h2>⭐ Featured Games</h2>
+
+    <div class="featured-container">
+
+        <!-- Free Fire -->
+
+        <div class="featured-card">
+
+            <img src="images/freefire.jpg" alt="Free Fire">
+
+            <h3>Free Fire</h3>
+
+            <p>
+                Battle Royale game with fast-paced action and exciting gameplay.
+            </p>
+
+            <a href="https://ff.garena.com/" target="_blank">
+                <button class="play-btn">▶ Play Now</button>
+            </a>
+
+        </div>
+
+        <!-- BGMI -->
+
+        <div class="featured-card">
+
+            <img src="images/bgmi.jpg" alt="BGMI">
+
+            <h3>BGMI</h3>
+
+            <p>
+                India's favorite battle royale game with realistic graphics.
+            </p>
+
+            <a href="https://www.battlegroundsmobileindia.com/" target="_blank">
+                <button class="play-btn">▶ Play Now</button>
+            </a>
+
+        </div>
+
+        <!-- GTA V -->
+
+        <div class="featured-card">
+
+            <img src="images/gta5.jpg" alt="GTA V">
+
+            <h3>GTA V</h3>
+
+            <p>
+                Explore Los Santos and complete exciting missions.
+            </p>
+
+            <a href="https://www.rockstargames.com/gta-v" target="_blank">
+                <button class="play-btn">▶ Play Now</button>
+            </a>
+
+        </div>
+
+        <!-- Minecraft -->
+
+        <div class="featured-card">
+
+            <img src="images/minecraft.jpg" alt="Minecraft">
+
+            <h3>Minecraft</h3>
+
+            <p>
+                Build, explore and survive in an unlimited block world.
+            </p>
+
+            <a href="https://www.minecraft.net/" target="_blank">
+                <button class="play-btn">▶ Play Now</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     Trending Games
+========================= -->
+
+<section class="games" id="games">
+
+    <h2>🔥 Trending Games</h2>
+
+    <div class="game-container">
+<!-- =========================
+     Free Fire
+========================= -->
+
+<div class="card game-card" data-category="battle">
+
+    <img src="images/freefire.jpg" alt="Free Fire">
+
+    <span class="favorite">🤍</span>
+
+    <h3>Free Fire</h3>
+
+    <div class="rating">
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+    </div>
+
+    <button class="details-btn">
+        View Details
+    </button>
+
+    <a href="https://ff.garena.com/" target="_blank">
+        <button class="play-btn">
+            ▶ Play Now
+        </button>
+    </a>
+
+    <a href="https://www.youtube.com/results?search_query=Free+Fire+Trailer" target="_blank">
+        <button>
+            🎥 Watch Trailer
+        </button>
+    </a>
+
+    <a href="https://play.google.com/store/search?q=Free%20Fire&c=apps" target="_blank">
+        <button class="download-btn">
+            ⬇️ Download
+        </button>
+    </a>
+
+    <p class="download-count">
+        Downloads :
+        <span>0</span>
+    </p>
+
+</div>
+
+<!-- =========================
+     BGMI
+========================= -->
+
+<div class="card game-card" data-category="battle">
+
+    <img src="images/bgmi.jpg" alt="BGMI">
+
+    <span class="favorite">🤍</span>
+
+    <h3>BGMI</h3>
+
+    <div class="rating">
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+    </div>
+
+    <button class="details-btn">
+        View Details
+    </button>
+
+    <a href="https://www.battlegroundsmobileindia.com/" target="_blank">
+        <button class="play-btn">
+            ▶ Play Now
+        </button>
+    </a>
+
+    <a href="https://www.youtube.com/results?search_query=BGMI+Trailer" target="_blank">
+        <button>
+            🎥 Watch Trailer
+        </button>
+    </a>
+
+    <a href="https://play.google.com/store/search?q=BGMI&c=apps" target="_blank">
+        <button class="download-btn">
+            ⬇️ Download
+        </button>
+    </a>
+
+    <p class="download-count">
+        Downloads :
+        <span>0</span>
+    </p>
+
+</div>
+<!-- =========================
+     GTA V
+========================= -->
+
+<div class="card game-card" data-category="action">
+
+    <img src="images/gta5.jpg" alt="GTA V">
+
+    <span class="favorite">🤍</span>
+
+    <h3>GTA V</h3>
+
+    <div class="rating">
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+    </div>
+
+    <button class="details-btn">
+        View Details
+    </button>
+
+    <a href="https://www.rockstargames.com/gta-v" target="_blank">
+        <button class="play-btn">
+            ▶ Play Now
+        </button>
+    </a>
+
+    <a href="https://www.youtube.com/results?search_query=GTA+5+Trailer" target="_blank">
+        <button>
+            🎥 Watch Trailer
+        </button>
+    </a>
+
+    <a href="https://www.rockstargames.com/gta-v" target="_blank">
+        <button class="download-btn">
+            ⬇️ Download
+        </button>
+    </a>
+
+    <p class="download-count">
+        Downloads :
+        <span>0</span>
+    </p>
+
+</div>
+
+<!-- =========================
+     Minecraft
+========================= -->
+
+<div class="card game-card" data-category="adventure">
+
+    <img src="images/minecraft.jpg" alt="Minecraft">
+
+    <span class="favorite">🤍</span>
+
+    <h3>Minecraft</h3>
+
+    <div class="rating">
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+        <span>⭐</span>
+    </div>
+
+    <button class="details-btn">
+        View Details
+    </button>
+
+    <a href="https://www.minecraft.net/" target="_blank">
+        <button class="play-btn">
+            ▶ Play Now
+        </button>
+    </a>
+
+    <a href="https://www.youtube.com/results?search_query=Minecraft+Trailer" target="_blank">
+        <button>
+            🎥 Watch Trailer
+        </button>
+    </a>
+
+    <a href="https://www.minecraft.net/download" target="_blank">
+        <button class="download-btn">
+            ⬇️ Download
+        </button>
+    </a>
+
+    <p class="download-count">
+        Downloads :
+        <span>0</span>
+    </p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     Latest Gaming News
+========================= -->
+
+<section id="news" class="news">
+
+    <h2>📰 Latest Gaming News</h2>
+
+    <div class="news-container">
+
+        <div class="news-card">
+
+            <img src="images/news1.jpg" alt="GTA VI">
+
+            <h3>GTA VI New Update</h3>
+
+            <p>Rockstar Games has released exciting updates about GTA VI.</p>
+
+            <a href="https://www.rockstargames.com/" target="_blank">
+                <button>📖 Read More</button>
+            </a>
+
+        </div>
+
+        <div class="news-card">
+
+            <img src="images/news2.jpg" alt="Free Fire">
+
+            <h3>Free Fire New Event</h3>
+
+            <p>Garena announces a new event with exclusive rewards.</p>
+
+            <a href="https://ff.garena.com/" target="_blank">
+                <button>📖 Read More</button>
+            </a>
+
+        </div>
+
+        <div class="news-card">
+
+            <img src="images/news3.jpg" alt="BGMI">
+
+            <h3>BGMI Tournament</h3>
+
+            <p>BGMI Championship registration is now open.</p>
+
+            <a href="https://www.battlegroundsmobileindia.com/" target="_blank">
+                <button>📖 Read More</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     User Reviews
+========================= -->
+
+<section class="reviews" id="reviews">
+
+    <h2>⭐ User Reviews</h2>
+
+    <input type="text" id="reviewName" placeholder="Your Name">
+
+    <textarea id="reviewText" placeholder="Write your Review"></textarea>
+
+    <button id="reviewBtn">Submit Review</button>
+
+    <div id="reviewList"></div>
+
+</section>
+
+<!-- =========================
+     Contact Us
+========================= -->
+
+<section class="contact" id="contact">
+
+    <h2>📞 Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-box">
+
+            <h3>📧 Email</h3>
+
+            <p>
+                <a href="mailto:rff98327@gmail.com">
+                    rff98327@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h3>📱 Phone</h3>
+
+            <p>
+                <a href="tel:+918300860601">
+                    +91 8300860601
+                </a>
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h3>📍 Address</h3>
+
+            <p>
+                Hasthinapuram,Chormpet,Chennai, India.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     Footer
+========================= -->
+
+<footer>
+
+    <h2>🎮 GameVerse</h2>
+
+    <p>Your Ultimate Gaming Destination</p>
+
+    <div class="social-icons">
+
+    <a href="https://www.instagram.com/romantcrgaming/" target="_blank">
+        📷 RomanTcrGaming Instagram
+    </a>
+
+    <a href="https://www.youtube.com/@RomanTcrGaming" target="_blank">
+        ▶ RomanTcrGaming YouTube
+    </a>
+
+</div>
+    <hr>
+
+    <p>© 2026 GameVerse. All Rights Reserved.</p>
+
+</footer>
+<!-- =========================
+     Game Details Popup
+========================= -->
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup">&times;</span>
+
+        <img id="popupImage" src="" alt="Game Image">
+
+        <h2 id="popupTitle"></h2>
+
+        <p id="popupText"></p>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     Back To Top Button
+========================= -->
+
+<button id="topBtn" title="Go to Top">
+    ⬆
+</button>
+
+<!-- =========================
+     Welcome User
+========================= -->
+
+<div id="welcomeUser"></div>
+
+<!-- =========================
+     JavaScript
+========================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
